@@ -18,6 +18,14 @@
 
 .header {
     width: 100%;
+    top: 0;
+    width: 100%; /* Шапка займёт всю ширину окна браузера */
+    z-index: 1000; /* Высокое значение, чтобы шапка была всегда на первом плане */
+    position: fixed;
+    background-color: var(--second-color);
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+-moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .header-container {
@@ -68,6 +76,7 @@
     max-width: var(--body-width); /* Уже чем header */
     margin: var(--spacing-lg) auto; /* Центрируем */
     padding: 0 var(--spacing-md);
+    padding-top: 50px;
 }
 
 .content {
@@ -78,7 +87,7 @@
 }
 
 .footer {
-    background-color: var(--secondary-dark);
+    background-color: var(--second-color);
     padding: var(--spacing-md);
     margin-top: var(--spacing-xl);
     border-top: 1px solid black;
