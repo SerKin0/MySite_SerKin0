@@ -1,0 +1,120 @@
+:root {
+    --body-width: 1000px;          /* Основная ширина контента */
+    --header-footer-width: 1200px; /* Ширина шапки и подвала (шире основного контента) */
+    
+    /* Размеры шрифтов */
+    --font-size-base: 20px;        /* Базовый размер текста (стандартный для body) */
+    --font-size-small: 16px;       /* Мелкий текст (подписи) */
+    --font-size-large: 30px;       /* Крупный текст (важные элементы) */
+    --font-size-h3: 24px;          /* Размер заголовков h3 */
+    
+    /* Отступы*/
+    --spacing-sm: 10px;            /* Маленькие отступы (между мелкими элементами) */
+    --spacing-md: 20px;            /* Средние отступы (стандартные отступы) */
+    --spacing-lg: 30px;            /* Большие отступы (между секциями) */
+    --spacing-xl: 40px;            /* Очень большие отступы (перед крупными заголовками) */
+}
+
+
+.header {
+    width: 100%;
+}
+
+.header-container {
+    max-width: var(--header-footer-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+
+}
+
+.text-logo {
+    font-family: 'Press Start 2P'; 
+    margin: var(--spacing-md);
+    color: var(--text-light);
+    font-size: var(--font-size-large);
+}
+
+.header-nav__ul {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav__li {
+    list-style-type: none;
+}
+
+.header-nav__link:hover {
+    color: black; 
+    border-bottom-width: 3px; 
+    transition: 1s; /* Время перехода */
+}
+
+.header-nav__link {
+    font-family: 'Ubuntu';
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+}
+
+.main {
+    max-width: var(--body-width); /* Уже чем header */
+    margin: var(--spacing-lg) auto; /* Центрируем */
+    padding: 0 var(--spacing-md);
+}
+
+.content {
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    font-size: var(--font-size-base);
+    line-height: 1.3; 
+}
+
+.footer {
+    background-color: var(--secondary-dark);
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.footer-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.footer-contacts {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.footer-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}

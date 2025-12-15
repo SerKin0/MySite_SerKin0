@@ -1,0 +1,34 @@
+.box-init {
+    font-size: var(--font-size-base);
+    border-radius: var(--spacing-sm);
+    border: 1px solid black;
+    
+}
+
+.grid-init {
+    max-width: var(--body-width);
+    max-width: 100%;
+    margin: auto;
+    padding: var(--spacing-sm);
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box-achievement {
+    background-color: var(--secondary-dark);
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: var(--font-size-small);
+}
+
+.img-grid__diplom {
+    width: 100%;
+    border-radius: 7px;
+}

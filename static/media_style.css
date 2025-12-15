@@ -1,0 +1,40 @@
+.about-me-container {
+    display: block;
+    overflow: hidden;
+    margin-bottom: var(--spacing-xl);
+}
+.about-me-image {
+    float: left;
+    flex: 0 0 auto;
+    width: 450px;
+    max-width: 45%;
+    margin: 0 var(--spacing-xl) var(--spacing-md) 0;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column; /* Вертикальное расположение на мобильных */
+        gap: var(--spacing-md);
+    }
+    
+    .about-me-image {
+        width: 100%; /* На мобильных - полная ширина */
+        max-width: 450px; /* Но не больше оригинального размера */
+        margin: 0 auto; /* Центрирование на мобильных */
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .about-me-image {
+        max-width: 100%; /* На очень маленьких - вся доступная ширина */
+    }
+}

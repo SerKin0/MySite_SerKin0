@@ -1,0 +1,94 @@
+:root {
+    --primary-dark: #0a0a0a;
+    --secondary-dark: #1a1a1a;
+    --accent-red: #d32f2f;
+    --accent-red-light: #f44336;
+    --text-light: #e0e0e0;
+    --text-gray: #aaaaaa;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.6; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h3 {
+  font-family: 'Press Start 2P';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.li-about-me__1  {
+  font-family: 'Press Start 2P'; 
+  font-size: var(--font-size-small)
+}
