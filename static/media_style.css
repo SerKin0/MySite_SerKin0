@@ -34,6 +34,11 @@
 
 /* Для очень маленьких экранов */
 @media (max-width: 480px) {
+    .about-me-container {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
     .about-me-image {
         max-width: 100%; /* На очень маленьких - вся доступная ширина */
     }

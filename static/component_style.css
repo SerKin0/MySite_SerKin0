@@ -1,12 +1,12 @@
 :root {
-    --body-width: 1000px;          /* Основная ширина контента */
-    --header-footer-width: 1200px; /* Ширина шапки и подвала (шире основного контента) */
+    --body-width: 1300px;          /* Основная ширина контента */
+    --header-footer-width: 1600px; /* Ширина шапки и подвала (шире основного контента) */
     
     /* Размеры шрифтов */
     --font-size-base: 20px;        /* Базовый размер текста (стандартный для body) */
     --font-size-small: 16px;       /* Мелкий текст (подписи) */
     --font-size-large: 30px;       /* Крупный текст (важные элементы) */
-    --font-size-h3: 24px;          /* Размер заголовков h3 */
+    --font-size-h3: 30px;          /* Размер заголовков h3 */
     
     /* Отступы*/
     --spacing-sm: 10px;            /* Маленькие отступы (между мелкими элементами) */
@@ -49,9 +49,9 @@
 }
 
 .header-nav__link:hover {
-    color: black; 
+    opacity: 0.7;
     border-bottom-width: 3px; 
-    transition: 1s; /* Время перехода */
+    transition: 0.6s; /* Время перехода */
 }
 
 .header-nav__link {
@@ -60,6 +60,8 @@
     color: var(--text-light);
     font-size: var(--font-size-base);
     font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .main {
@@ -117,4 +119,52 @@
 .footer-link:hover {
     color: var(--accent-color);
     text-decoration: underline;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-list li {
+    margin-bottom: 12px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: var(--text-light);
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.link-item:hover {
+    background-color: var(--second-color);
+}
+
+.link-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.link-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.link-title {
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.link-url {
+    font-size: 0.85em;
+    color: var(--text-color);
+    word-break: break-all;
 }
