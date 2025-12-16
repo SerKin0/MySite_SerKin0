@@ -23,6 +23,7 @@
     .about-me-container {
         flex-direction: column; /* Вертикальное расположение на мобильных */
         gap: var(--spacing-md);
+        float: center;
     }
     
     .about-me-image {
@@ -35,11 +36,20 @@
 /* Для очень маленьких экранов */
 @media (max-width: 480px) {
     .about-me-container {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         margin-bottom: 20px;
     }
 
     .about-me-image {
         max-width: 100%; /* На очень маленьких - вся доступная ширина */
     }
+}
+
+.coub-main {
+    width: 90% !important;
+    max-width: 1280px;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
 }
